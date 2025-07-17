@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Conesa/ScheduleDelivery/etc/webapi.xml
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- Para clientes logueados -->
+    <route url="/V1/carts/mine/set-schedule-delivery" method="POST">
+        <service class="Conesa\ScheduleDelivery\Api\ScheduleDeliveryManagementInterface" method="saveScheduleDelivery"/>
+        <resources>
+            <resource ref="self"/>
+        </resources>
+    </route>
+    <!-- Para clientes invitados -->
+    <route url="/V1/guest-carts/:cartId/set-schedule-delivery" method="POST">
+        <service class="Conesa\ScheduleDelivery\Api\ScheduleDeliveryManagementInterface" method="saveScheduleDelivery"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

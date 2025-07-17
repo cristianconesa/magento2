@@ -1,0 +1,45 @@
+<!--
+/**
+ * Conesa/ScheduleDelivery/view/frontend/web/template/schedule-delivery.html
+ */
+-->
+<div class="schedule-delivery-container" style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+    <button type="button" class="button action" data-bind="click: toggleSelectors">
+        <span data-bind="i18n: 'Entrega programada'"></span>
+    </button>
+
+    <!-- ko if: showSelectors -->
+    <div class="schedule-delivery-selectors" style="margin-top: 15px;">
+        <div class="field required">
+            <label class="label" for="schedule_delivery_date">
+                <span data-bind="i18n: 'Fecha de Entrega'"></span>
+            </label>
+            <div class="control">
+                <input type="text"
+                       class="input-text"
+                       id="schedule_delivery_date"
+                       name="schedule_delivery_date"
+                       data-bind="value: selectedDate, valueUpdate: 'change', afterRender: initDatepicker"
+                       aria-required="true" />
+            </div>
+        </div>
+        <div class="field required">
+            <label class="label" for="schedule_delivery_time_slot">
+                <span data-bind="i18n: 'Rango Horario'"></span>
+            </label>
+            <div class="control">
+                <select class="select"
+                        id="schedule_delivery_time_slot"
+                        name="schedule_delivery_time_slot"
+                        data-bind="options: timeSlots,
+                                   optionsText: 'label',
+                                   optionsValue: 'value',
+                                   value: selectedTimeSlot,
+                                   optionsCaption: $t('Seleccione un rango horario...')"
+                        aria-required="true">
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- /ko -->
+</div>

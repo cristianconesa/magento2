@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <container name="order_schedule_delivery_info_wrapper" htmlTag="div" htmlClass="admin__page-section" after="order_info">
+                <block class="Conesa\ScheduleDelivery\Block\Adminhtml\Order\View\ScheduleInfo"
+                       name="sales_order_view_schedule_info"
+                       template="Conesa_ScheduleDelivery::order/view/schedule_info.phtml" />
+            </container>
+        </referenceContainer>
+    </body>
+</page>

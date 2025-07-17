@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Conesa/ScheduleDelivery/etc/db_schema.xml
+ *
+ * @category  Conesa
+ * @package   Conesa_ScheduleDelivery
+ * @author    Tu Nombre
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote" resource="default" engine="innodb" comment="Quote Table">
+        <column xsi:type="varchar" name="schedule_delivery_date" nullable="true" length="255" comment="Scheduled Delivery Date"/>
+        <column xsi:type="varchar" name="schedule_delivery_time_slot" nullable="true" length="255" comment="Scheduled Delivery Time Slot"/>
+    </table>
+    <table name="sales_order" resource="default" engine="innodb" comment="Sales Order Table">
+        <column xsi:type="varchar" name="schedule_delivery_date" nullable="true" length="255" comment="Scheduled Delivery Date"/>
+        <column xsi:type="varchar" name="schedule_delivery_time_slot" nullable="true" length="255" comment="Scheduled Delivery Time Slot"/>
+    </table>
+</schema>

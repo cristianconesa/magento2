@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Conesa/ScheduleDelivery/etc/di.xml
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Conesa\ScheduleDelivery\Api\ScheduleDeliveryManagementInterface"
+                type="Conesa\ScheduleDelivery\Model\ScheduleDeliveryManagement"/>
+    <preference for="Conesa\ScheduleDelivery\Api\Data\ScheduleDataInterface"
+                type="Conesa\ScheduleDelivery\Model\Data\ScheduleData"/>
+</config>
