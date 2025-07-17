@@ -5,7 +5,7 @@
             <container name="order_schedule_delivery_info_wrapper" htmlTag="div" htmlClass="admin__page-section" after="order_info">
                 <block class="Conesa\ScheduleDelivery\Block\Adminhtml\Order\View\ScheduleInfo"
                        name="sales_order_view_schedule_info"
-                       template="Conesa_ScheduleDelivery::order/view/schedule_info.phtml" />
+                       template="Conesa_ScheduleDelivery::order/schedule_delivery.phtml" />
             </container>
         </referenceContainer>
     </body>
