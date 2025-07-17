@@ -1146,7 +1146,8 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            'Conesa_ScheduleDelivery/js/action/save-schedule': 'Conesa_ScheduleDelivery/js/action/save-schedule'
+            'Conesa_ScheduleDelivery/js/action/save-schedule': 'Conesa_ScheduleDelivery/js/action/save-schedule',
+            'Conesa_ScheduleDelivery/js/view/shipping-method-list': 'Conesa_ScheduleDelivery/js/view/shipping-method-list'
         }
     },
     config: {

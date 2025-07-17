@@ -53,6 +53,7 @@
   'Conesa\\ScheduleDelivery\\Model\\Data\\ScheduleData' => false,
   'Conesa\\ScheduleDelivery\\Model\\ScheduleDeliveryManagement' => false,
   'Conesa\\ScheduleDelivery\\Observer\\SaveToOrderObserver' => false,
+  'Conesa\\ScheduleDelivery\\Setup\\UpgradeData' => false,
   'ConfigurableFinalPriceResolver' => false,
   'ConfigurableRegularPriceResolver' => false,
   'Countable' => false,
