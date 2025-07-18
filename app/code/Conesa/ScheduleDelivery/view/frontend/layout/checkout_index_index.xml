@@ -27,7 +27,7 @@
                                                             <item name="children" xsi:type="array">
                                                                 <item name="schedule-delivery" xsi:type="array">
                                                                     <item name="component" xsi:type="string">Conesa_ScheduleDelivery/js/view/schedule-delivery</item>
-                                                                    <item name="displayArea" xsi:type="string">before-shipping-method-form</item>
+                                                                    <item name="displayArea" xsi:type="string">shippingAdditional</item>
                                                                 </item>
                                                             </item>
                                                         </item>
